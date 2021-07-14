@@ -18,6 +18,8 @@ def index01(request):
 
 def index02(request):
     request.GET['first']
-    result = {'first':request.GET['first'],'second':request.GET['second']}
-    return render(request, 'index.html', context=result)
+   # result = {'first':request.GET['first'],'second':request.GET['second']}
+    return render(request, 'index_copy', context=result)
+
+
 
