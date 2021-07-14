@@ -5,6 +5,7 @@ import folium
 def home(request):
     mf = folium.Map([35.3369, 127.7306], zoom_start=10)
     mf = mf._repr_html_()
-    result ={'mapfolium': mf}
-    
+    first ='juna'
+    result ={'mapfolium': mf, 'fo1':first}
+
     return render(request, template_name='maps/home.html', context=result)

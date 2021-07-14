@@ -13,13 +13,13 @@ def index(request):
     return HttpResponse(resultstr)
 
 def index01(request):
-    result = {'first':'sanghun','second':'Oh'}
+    result = {'first':'juna','second':'you'}
     return render(request, 'index.html', context=result)
 
 def index02(request):
     request.GET['first']
-   # result = {'first':request.GET['first'],'second':request.GET['second']}
-    return render(request, 'index_copy', context=result)
+    result = {'first':request.GET['first'],'second':request.GET['second']}
+    return render(request, 'index.html', context=result)
 
 
 
