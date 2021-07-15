@@ -7,7 +7,7 @@ import sqlite3
 if res.status_code == 200:
     soup = BeautifulSoup(res.content, 'html.parser')
     links = soup.select('a.link_txt')
-    connect = sqlite3.connect('./db.sqlite3')
+    connect = sqlite3.connect('../db.sqlite3')
     cursor = connect.cursor()
 
     for link in links:
@@ -17,7 +17,8 @@ if res.status_code == 200:
         try:
             cursor.execute(
                 "insert into polls_economics(create_date, href, title) values(datetime('now'),?,?)", (href, title))
+            print(title, '  :  ', href)
         except:
-            pass
-        print(title, '  :  ', href)
+         pass
+
     connect.commit()
