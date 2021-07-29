@@ -17,9 +17,14 @@ def index01(request):
     return render(request, 'index.html', context=result)
 
 def index02(request):
-    request.GET['first']
-    result = {'first':request.GET['first'],'second':request.GET['second']}
+    # request.GET['first']
+    # result = {'first':request.GET['first'],'second':request.GET['second']}
+    # first = request.GET[first']
+    # second = request.GET['second']
+    # pd.read_csv('../static/ratings-20m.csv')
+
     return render(request, 'index.html', context=result)
+
 
 
 
