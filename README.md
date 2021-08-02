@@ -6,5 +6,5 @@
 <a href="https://github.com/junanote/test_django/tree/master/project_desc">프로젝트 설명</a>
 
 
-[![SC2 Video](https://img.youtube.com/vi/{vid}/0.jpg)] https://youtu.be/CCHcG4MVfe0={vid})
+[![SC2 Video](https://youtu.be/CCHcG4MVfe0/vi/{vid}/0.jpg)] 
 
